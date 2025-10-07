@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Project Portfolio — TechBro</title>
+  <meta content="Cloud and DevOps project portfolio of Idemudia Fred Irekponor" name="description" />
+  <meta content="DevOps, Cloud, AWS, Azure, Terraform, Jenkins, Kubernetes, Ansible, Monitoring" name="keywords" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="portfolio-page">
+  <!-- Header -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Profile image" class="img-fluid rounded-circle" />
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Idemudia Fred Irekponor</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.x.com/stillfreddy" class="x"><i class="bi bi-x"></i></a>
+      <a href="https://instagram.com/stillfreddie" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/fred-irekponor" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/stillfreddie" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://stillfreddie.hashnode.dev" class="hashnode"><i class="bi bi-journal-text"></i></a>
+      <a href="mailto:contact@techbrodev.com.ng" class="email"><i class="bi bi-envelope"></i></a>
+      <a href="https://techbrodev.com.ng" class="website"><i class="bi bi-globe"></i></a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="resume.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="project-portfolio.html" class="active"><i class="bi bi-images navicon"></i> Project Portfolio</a></li>
+        <li><a href="devops-expertise.html"><i class="bi bi-hdd-stack navicon"></i> DevOps Expertise</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /Header -->
+
+  <main class="main">
+    <!-- Portfolio Section ONLY -->
+    <section id="portfolio" class="portfolio section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Project Portfolio</h2>Here’s a collection of my Cloud and DevOps projects, from Terraform automation and CI/CD pipelines to cloud monitoring and container orchestration. Each project reflects my growth, learning, and real-world implementation experience.
+        <p></p>
+      </div>
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- Filters -->
+          <ul class="portfolio-flters portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-terraform">Terraform</li>
+            <li data-filter=".filter-jenkins">Jenkins</li>
+            <li data-filter=".filter-ansible">Ansible</li>
+            <li data-filter=".filter-azure">Azure</li>
+            <li data-filter=".filter-aws">AWS</li>
+            <li data-filter=".filter-monitoring">Monitoring</li>
+          </ul>
+
+          <!-- Grid -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Terraform: CloudNorth -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-terraform">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/cloudnorth.png" class="img-fluid" alt="CloudNorth Terraform AWS EKS Jenkins Project" />
+                <div class="portfolio-info">
+                  <h4>CloudNorth Final Project</h4>
+                  <p class="small">End to end AWS platform with Terraform modules, Jenkins CI/CD, Docker, and EKS on ALB. Blue green deployments and full monitoring with Prometheus, Grafana, and CloudWatch.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/cloudnorth.png" data-gallery="portfolio-gallery-terraform" class="glightbox" title="CloudNorth Final Project"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/cloudnorth-final-project-designing-a-scalable-aws-infrastructure-with-terraform-jenkins-docker-k8s-alb-blue-green-deployment-and-full-monitoring" title="Read Blog"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/cloudnorth-final-project" title="View on GitHub"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">AWS</span>
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">Jenkins</span>
+                    <span class="badge bg-secondary me-1">Docker</span>
+                    <span class="badge bg-secondary me-1">Kubernetes EKS</span>
+                    <span class="badge bg-secondary me-1">ALB</span>
+                    <span class="badge bg-secondary me-1">Blue Green</span>
+                    <span class="badge bg-secondary me-1">Prometheus</span>
+                    <span class="badge bg-secondary me-1">Grafana</span>
+                    <span class="badge bg-secondary me-1">CloudWatch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terraform: EC2 ASG ALB -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-terraform">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/terraform-ec2-asg-alb.png" class="img-fluid" alt="Terraform EC2 Autoscaling ALB NGINX with Terraform Cloud" />
+                <div class="portfolio-info">
+                  <h4>Scalable Web Infra with Terraform, ASG, ALB, NGINX, Terraform Cloud</h4>
+                  <p class="small">Scalable EC2 infra using Terraform Cloud backend, ALB, and NGINX with Autoscaling and remote state management.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/terraform-ec2-asg-alb.png" data-gallery="portfolio-gallery-terraform" class="glightbox" title="Terraform EC2 ASG ALB NGINX"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/scalable-web-infrastructure-with-terraform-ec2-autoscaling-alb-nginx-on-aws-and-remote-state-management-with-terraform-cloud" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/terraform-ec2-asg-alb-nginx" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">AWS EC2</span>
+                    <span class="badge bg-secondary me-1">Security Groups</span>
+                    <span class="badge bg-secondary me-1">ALB</span>
+                    <span class="badge bg-secondary me-1">Auto Scaling</span>
+                    <span class="badge bg-secondary me-1">NGINX</span>
+                    <span class="badge bg-secondary me-1">Terraform Cloud</span>
+                    <span class="badge bg-secondary me-1">GitHub</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terraform: Azure VPN Workstation -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-terraform">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/terraform-vpn.png" class="img-fluid" alt="Azure Remote Workstation with Terraform and VPN" />
+                <div class="portfolio-info">
+                  <h4>Remote Workstation with Secure VPN — Terraform and Azure</h4>
+                  <p class="small">Provisioned a secure Ubuntu workstation on Azure via Terraform. Full XFCE desktop reachable over RDP through an OpenVPN tunnel.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/terraform-vpn.png" data-gallery="portfolio-gallery-terraform" class="glightbox" title="Azure Remote Workstation VPN Project"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/building-a-cloud-based-remote-workstation-with-secure-vpn-tunnel-using-terraform-and-azure" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/azure-openvpn-xrdp" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">Azure</span>
+                    <span class="badge bg-secondary me-1">VPN</span>
+                    <span class="badge bg-secondary me-1">XRDP</span>
+                    <span class="badge bg-secondary me-1">XFCE</span>
+                    <span class="badge bg-secondary me-1">Ubuntu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jenkins: Go App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-jenkins">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/jenkins-goapp.png" class="img-fluid" alt="Go Car Hire App Jenkins CI/CD Pipeline" />
+                <div class="portfolio-info">
+                  <h4>Go-Based Car Hire App — Jenkins CI/CD on VPS</h4>
+                  <p class="small">Prod-like CI/CD with Jenkins and Docker. Built from scratch, containerized, and auto-deployed through a managed Jenkins pipeline.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/jenkins-goapp.png" data-gallery="portfolio-gallery-jenkins" class="glightbox" title="Go App with Jenkins CI/CD"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/go-based-car-hire-web-app-with-jenkins-cicd-on-a-vps" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/car-hire-app" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Jenkins</span>
+                    <span class="badge bg-secondary me-1">Docker</span>
+                    <span class="badge bg-secondary me-1">Go</span>
+                    <span class="badge bg-secondary me-1">GitHub</span>
+                    <span class="badge bg-secondary me-1">CI/CD</span>
+                    <span class="badge bg-secondary me-1">Pipeline</span>
+                    <span class="badge bg-secondary me-1">VPS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ansible -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ansible">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/ansible-ssh.png" class="img-fluid" alt="Ansible EC2 Automation with Passwordless SSH, Git and NGINX" />
+                <div class="portfolio-info">
+                  <h4>Ansible EC2 Automation with Passwordless SSH</h4>
+                  <p class="small">Automated EC2 control node and workstation, passwordless SSH, Git and NGINX installs via idempotent Ansible playbooks with clean inventories and vars.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/ansible-ssh.png" data-gallery="portfolio-gallery-ansible" class="glightbox" title="Ansible EC2 Automation"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/ansible-ec2-automation-with-passwordless-ssh-control-node-workstation-git-and-nginx-installation" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/Ansibleproject" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Ansible</span>
+                    <span class="badge bg-secondary me-1">AWS</span>
+                    <span class="badge bg-secondary me-1">EC2</span>
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">NGINX</span>
+                    <span class="badge bg-secondary me-1">Playbook</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Azure: Monitoring -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-azure">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/azure-monitor.png" class="img-fluid" alt="Azure Monitoring and Alerts with Terraform" />
+                <div class="portfolio-info">
+                  <h4>Azure Web App Monitoring and Alerts (Terraform)</h4>
+                  <p class="small">Provisioned App Service, Application Insights, Log Analytics, Diagnostic Settings, and custom Alert Rules via IaC and Terraform Cloud.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/azure-monitor.png" data-gallery="portfolio-gallery-azure" class="glightbox" title="Azure Monitoring IaC"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/deploying-azure-web-app-monitoring-and-alerts-using-terraform" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/azure-monitoring-iac" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Azure</span>
+                    <span class="badge bg-secondary me-1">Application Insights</span>
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">Terraform Cloud</span>
+                    <span class="badge bg-secondary me-1">Monitoring</span>
+                    <span class="badge bg-secondary me-1">IaC</span>
+                    <span class="badge bg-secondary me-1">Web App</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Azure: Blob Storage -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-azure">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/blob-storage.png" class="img-fluid" alt="Azure Blob Storage Private Access and SAS Sharing" />
+                <div class="portfolio-info">
+                  <h4>Azure Blob Storage — Private Access plus SAS</h4>
+                  <p class="small">Private storage account, confidential uploads, anonymous public access disabled, and time-limited SAS links for external sharing.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/blob-storage.png" data-gallery="portfolio-gallery-azure" class="glightbox" title="Azure Blob Storage Security"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/how-to-create-an-azure-blob-storage-account-and-and-store-confidential-document-with-a-privateno-anonymous-access" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/Azure-Blob-Storage" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Azure</span>
+                    <span class="badge bg-secondary me-1">Blob Storage</span>
+                    <span class="badge bg-secondary me-1">SAS</span>
+                    <span class="badge bg-secondary me-1">Access Control</span>
+                    <span class="badge bg-secondary me-1">Security</span>
+                    <span class="badge bg-secondary me-1">Cloud Storage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Azure: AKS Autoscaler -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-azure">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/azure-cluster-autoscaler.jpeg" class="img-fluid" alt="Azure AKS Cluster with Autoscaling" />
+                <div class="portfolio-info">
+                  <h4>AKS with Cluster Autoscaler Enabled</h4>
+                  <p class="small">Production-grade AKS with Cluster Autoscaler for dynamic node scaling. Secure, efficient resource usage across environments.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/azure-cluster-autoscaler.jpeg" data-gallery="portfolio-gallery-azure" class="glightbox" title="AKS with Cluster Autoscaler"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/deploying-a-kubernetes-cluster-on-azure-aks-with-cluster-auto-scaling-enabled" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/azure-aks-cluster-autoscaler" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Azure</span>
+                    <span class="badge bg-secondary me-1">AKS</span>
+                    <span class="badge bg-secondary me-1">Kubernetes</span>
+                    <span class="badge bg-secondary me-1">Cluster Autoscaler</span>
+                    <span class="badge bg-secondary me-1">ACR</span>
+                    <span class="badge bg-secondary me-1">Terraform</span>
+                    <span class="badge bg-secondary me-1">IaC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS: ECS Fargate -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-aws">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/aws-ecs-fargate-ecr-ec2.jpeg" class="img-fluid" alt="Containerizing an Application using ECR, EC2, Fargate and ECS" />
+                <div class="portfolio-info">
+                  <h4>Containerizing with ECR, ECS Fargate and EC2</h4>
+                  <p class="small">Containerized app pushed to ECR and deployed on ECS Fargate with task autoscaling for resilience and cost control.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/aws-ecs-fargate-ecr-ec2.jpeg" data-gallery="portfolio-gallery-aws" class="glightbox" title="ECS Fargate with ECR"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/containerizing-an-application-using-ecrec2fargate-andecs" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/aws-ecs-fargate-ecr-ec2" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">AWS</span>
+                    <span class="badge bg-secondary me-1">ECS</span>
+                    <span class="badge bg-secondary me-1">Fargate</span>
+                    <span class="badge bg-secondary me-1">ECR</span>
+                    <span class="badge bg-secondary me-1">EC2</span>
+                    <span class="badge bg-secondary me-1">Docker</span>
+                    <span class="badge bg-secondary me-1">ALB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS: EKS Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-aws">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/aws-eks-project.png" class="img-fluid" alt="Secure and Scalable EKS Cluster on AWS" />
+                <div class="portfolio-info">
+                  <h4>Secure and Scalable EKS Cluster on AWS</h4>
+                  <p class="small">Production-ready EKS with secure networking, IAM roles for service accounts, autoscaling, and scalable workloads.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/aws-eks-project.png" data-gallery="portfolio-gallery-aws" class="glightbox" title="Secure and Scalable EKS on AWS"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/a-comprehensive-guide-to-deploying-a-secure-and-scalable-eks-cluster-on-aws" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/AWS-EKS-Project" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">AWS</span>
+                    <span class="badge bg-secondary me-1">EKS</span>
+                    <span class="badge bg-secondary me-1">Kubernetes</span>
+                    <span class="badge bg-secondary me-1">Cluster Autoscaler</span>
+                    <span class="badge bg-secondary me-1">IAM</span>
+                    <span class="badge bg-secondary me-1">Ingress</span>
+                    <span class="badge bg-secondary me-1">Observability</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS: EFS Multi-EC2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-aws">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/aws-efs-multi-ec2.jpeg" class="img-fluid" alt="Amazon EFS for Multi-EC2" />
+                <div class="portfolio-info">
+                  <h4>Amazon EFS for Multi-EC2 Read/Write</h4>
+                  <p class="small">Production-ready EFS enabling read/write access for two EC2 instances with proper IAM and security group controls.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/aws-efs-multi-ec2.jpeg" data-gallery="portfolio-gallery-aws" class="glightbox" title="Amazon Elastic File System for Multi-EC2"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/configuring-amazon-elastic-file-system-efs-for-multi-ec2-readwrite-access" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/aws-efs-multi-ec2" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">AWS</span>
+                    <span class="badge bg-secondary me-1">EFS</span>
+                    <span class="badge bg-secondary me-1">IAM</span>
+                    <span class="badge bg-secondary me-1">File Sharing</span>
+                    <span class="badge bg-secondary me-1">Cloud Computing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Monitoring: Prometheus Grafana Alertmanager -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-monitoring">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/prometheus-grafana-alertmanager-vps.png" class="img-fluid" alt="Prometheus Grafana Alertmanager on VPS" />
+                <div class="portfolio-info">
+                  <h4>Prometheus, Grafana and Alertmanager on Ubuntu VPS</h4>
+                  <p class="small">Full observability stack: Prometheus scraping, Grafana dashboards, Alertmanager notifications, plus custom endpoints and rules.</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/prometheus-grafana-alertmanager-vps.png" data-gallery="portfolio-gallery-monitoring" class="glightbox" title="Prometheus Grafana Alertmanager VPS Monitoring"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://stillfreddie.hashnode.dev/cloud-metrics-mastery-deploying-prometheus-grafana-and-alertmanager-with-endpoints-on-an-ubuntu-vps-for-real-time-monitoring" title="Read Blog" target="_blank"><i class="bi bi-journal-text"></i></a>
+                    <a href="https://github.com/stillfreddie/prometheus-grafana-alertmanager-vps" title="View on GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-secondary me-1">Prometheus</span>
+                    <span class="badge bg-secondary me-1">Grafana</span>
+                    <span class="badge bg-secondary me-1">Alertmanager</span>
+                    <span class="badge bg-secondary me-1">Ubuntu</span>
+                    <span class="badge bg-secondary me-1">Metrics</span>
+                    <span class="badge bg-secondary me-1">Dashboards</span>
+                    <span class="badge bg-secondary me-1">Monitoring</span>
+                    <span class="badge bg-secondary me-1">VPS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /Grid -->
+        </div><!-- /isotope-layout -->
+      </div><!-- /container -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">TechBro Dev</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
