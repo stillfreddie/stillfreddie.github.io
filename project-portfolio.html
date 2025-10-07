@@ -87,15 +87,15 @@
     <!-- Portfolio Section ONLY -->
     <section id="portfolio" class="portfolio section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Project Portfolio</h2>Here’s a collection of my Cloud and DevOps projects, from Terraform automation and CI/CD pipelines to cloud monitoring and container orchestration. Each project reflects my growth, learning, and real-world implementation experience.
+        <h2>Project Portfolio</h2>Here’s a collection of my Cloud and DevOps projects — Terraform automation, CI/CD pipelines, container orchestration, and full-stack monitoring.
         <p></p>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <!-- Filters -->
-          <ul class="portfolio-flters portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters isotope-filters d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-terraform">Terraform</li>
             <li data-filter=".filter-jenkins">Jenkins</li>
@@ -442,5 +442,27 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const layout = document.querySelector('.isotope-layout');
+  if (!layout || typeof Isotope === 'undefined') return;
+
+  const container = layout.querySelector('.isotope-container');
+  const iso = new Isotope(container, {
+    itemSelector: '.isotope-item',
+    layoutMode: layout.getAttribute('data-layout') || 'masonry'
+  });
+
+  document.querySelectorAll('.isotope-filters li').forEach(li => {
+    li.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelectorAll('.isotope-filters .filter-active')
+        .forEach(x => x.classList.remove('filter-active'));
+      this.classList.add('filter-active');
+      iso.arrange({ filter: this.getAttribute('data-filter') });
+    });
+  });
+});
+</script>
 </body>
 </html>
