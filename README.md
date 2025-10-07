@@ -32,7 +32,7 @@ I specialize in building real-world DevOps pipelines and infrastructures using:
 - 🧱IaC Tools: Terraform, Ansible  
 - 🔁CI/CD: Jenkins, GitHub Actions  
 - 🐳Containers: Docker, Kubernetes  
-- 📊Monitoring: Prometheus, Grafana  
+- 📊Monitoring: Prometheus, Grafana, CloudWatch, Alert Manager  
 - 🖥️Languages: Bash, Go  
 
 > _“I push code, I scale clouds, and I eat Amala.”
