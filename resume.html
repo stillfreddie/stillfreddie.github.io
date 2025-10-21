@@ -98,45 +98,53 @@
         </a>
       </div>
 
-      <!-- Google Analytics Resume Tracking Script -->
+      <!-- Google Analytics Resume Tracking Script (robust retry) -->
       <script>
         (function() {
-          function whenGtagReady(callback) {
-            var waited = 0;
-            var iv = setInterval(function() {
-              if (typeof gtag === 'function') {
-                clearInterval(iv);
-                callback();
-              } else {
-                waited += 100;
-                if (waited >= 3000) {
-                  clearInterval(iv);
-                  console.warn('gtag not available after 3s');
-                  callback();
-                }
-              }
-            }, 100);
+          var btn = document.getElementById('resumeBtn');
+          if (!btn) {
+            console.warn('resumeBtn not found');
+            return;
           }
 
-          whenGtagReady(function() {
-            var btn = document.getElementById('resumeBtn');
-            if (!btn) return console.warn('resumeBtn not found');
-            btn.addEventListener('click', function() {
+          function sendResumeEvent() {
+            if (typeof gtag === 'function') {
               try {
-                if (typeof gtag === 'function') {
-                  gtag('event', 'resume_view', {
-                    event_category: 'engagement',
-                    event_label: 'Resume View Button'
-                  });
-                  console.log('GA event fired: resume_view');
-                } else {
-                  console.log('gtag not defined — could not send resume_view');
-                }
+                gtag('event', 'resume_view', {
+                  event_category: 'engagement',
+                  event_label: 'Resume View Button'
+                });
+                console.log('GA event fired: resume_view');
+                return true;
               } catch (err) {
                 console.error('Error sending GA event', err);
+                return false;
               }
-            }, false);
-          });
+            }
+            return false;
+          }
+
+          btn.addEventListener('click', function(e) {
+            var tries = 0;
+            var maxTries = 5;
+            var interval = 400;
+
+            function attempt() {
+              tries++;
+              if (sendResumeEvent()) {
+                return;
+              }
+              if (tries < maxTries) {
+                setTimeout(attempt, interval);
+              } else {
+                console.warn('gtag not available after retries; event not sent to GA');
+              }
+            }
+
+            // start attempts (non-blocking)
+            attempt();
+            // link still opens in new tab because of target="_blank"
+          }, false);
         })();
       </script>
 
