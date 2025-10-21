@@ -83,19 +83,27 @@
 
   <main class="main">
 
-    <!-- Page title -->
-    <section class="section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>If you’d like to learn more about my experience, projects, and DevOps journey, please click the button below to view my complete resume in PDF format..</p>
-        <div class="mt-3 d-flex gap-2">
-          <a class="btn btn-primary" href="assets/Fred_I_Resume.pdf" target="_blank" rel="noopener">
-            <i class="bi bi-file-earmark-pdf"></i> View Resume PDF
-          </a>
-          
-        </div>
+  <!-- Page title -->
+  <section class="section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Resume</h2>
+      <p>If you’d like to learn more about my experience, projects, and DevOps journey, please click the button below to view my complete resume in PDF format.</p>
+      <div class="mt-3 d-flex gap-2">
+        <a class="btn btn-primary"
+           href="https://techbrodev.com.ng/assets/Fred_I_Resume.pdf"
+           target="_blank"
+           rel="noopener"
+           onclick="gtag('event', 'resume_view', { 
+               'event_category': 'engagement', 
+               'event_label': 'Resume View Button'
+           });">
+          <i class="bi bi-file-earmark-pdf"></i> View Resume PDF
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
+
 
     <!-- Summary and Highlights -->
     <section class="section">
