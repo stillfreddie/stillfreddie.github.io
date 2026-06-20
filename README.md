@@ -68,4 +68,4 @@ I used AI only to help with syntax accuracy and layout. All deployments, testing
 
 ---
 
-© 2025  (Tech Bro) | Hosted on GitHub Pages All Right Reserved.
+© 2026  (Tech Bro) | Hosted on GitHub Pages All Right Reserved.
