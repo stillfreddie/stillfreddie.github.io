@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJZEPTTLBR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CJZEPTTLBR');
+  </script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume - TechBro Dev</title>
@@ -39,13 +48,13 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://www.x.com/stillfreddy" class="x"><i class="bi bi-x"></i></a>
-      <a href="https://instagram.com/stillfreddie" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/fred-irekponor" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/stillfreddie" class="github"><i class="bi bi-github"></i></a>
-      <a href="https://stillfreddie.hashnode.dev" class="hashnode"><i class="bi bi-journal-text"></i></a>
+      <a href="https://www.x.com/stillfreddy" class="x" target="_blank" rel="noopener"><i class="bi bi-x"></i></a>
+      <a href="https://instagram.com/stillfreddie" class="instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/fred-irekponor" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/stillfreddie" class="github" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+      <a href="https://stillfreddie.hashnode.dev" class="hashnode" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i></a>
       <a href="mailto:contact@techbrodev.com.ng" class="email"><i class="bi bi-envelope"></i></a>
-      <a href="https://techbrodev.com.ng" class="website"><i class="bi bi-globe"></i></a>
+      <a href="https://techbrodev.com.ng" class="website" target="_blank" rel="noopener"><i class="bi bi-globe"></i></a>
     </div>
 
     <!-- Nav -->
@@ -56,25 +65,6 @@
         <li><a href="resume.html" class="active"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="project-portfolio.html"><i class="bi bi-images navicon"></i> Project Portfolio</a></li>
         <li><a href="devops-expertise.html"><i class="bi bi-hdd-stack navicon"></i> DevOps Expertise</a></li>
-
-        <li class="dropdown">
-          <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
 
         <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
@@ -87,66 +77,16 @@
   <section class="section light-background">
     <div class="container section-title" data-aos="fade-up">
       <h2>Resume</h2>
-      <p>If you’d like to learn more about my experience, projects, and DevOps journey, please click the button below to view my complete resume in PDF format.</p>
-      
+      <p>If you’d like to learn more about my experience, projects, and DevOps journey, feel free to reach out directly and I’ll share my full resume with you.</p>
+
       <div class="mt-3 d-flex gap-2">
-        <a id="resumeBtn" class="btn btn-primary"
-           href="https://techbrodev.com.ng/assets/Fred_I_Resume.pdf"
-           target="_blank"
-           rel="noopener">
-          <i class="bi bi-file-earmark-pdf"></i> View Resume PDF
+        <a class="btn btn-primary" href="contact.html">
+          <i class="bi bi-envelope"></i> Request My Resume
+        </a>
+        <a class="btn btn-outline-dark" href="project-portfolio.html">
+          <i class="bi bi-images"></i> View My Projects
         </a>
       </div>
-
-      <!-- Google Analytics Resume Tracking Script (robust retry) -->
-      <script>
-        (function() {
-          var btn = document.getElementById('resumeBtn');
-          if (!btn) {
-            console.warn('resumeBtn not found');
-            return;
-          }
-
-          function sendResumeEvent() {
-            if (typeof gtag === 'function') {
-              try {
-                gtag('event', 'resume_view', {
-                  event_category: 'engagement',
-                  event_label: 'Resume View Button'
-                });
-                console.log('GA event fired: resume_view');
-                return true;
-              } catch (err) {
-                console.error('Error sending GA event', err);
-                return false;
-              }
-            }
-            return false;
-          }
-
-          btn.addEventListener('click', function(e) {
-            var tries = 0;
-            var maxTries = 5;
-            var interval = 400;
-
-            function attempt() {
-              tries++;
-              if (sendResumeEvent()) {
-                return;
-              }
-              if (tries < maxTries) {
-                setTimeout(attempt, interval);
-              } else {
-                console.warn('gtag not available after retries; event not sent to GA');
-              }
-            }
-
-            // start attempts (non-blocking)
-            attempt();
-            // link still opens in new tab because of target="_blank"
-          }, false);
-        })();
-      </script>
 
     </div>
   </section>
@@ -184,7 +124,7 @@
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">TechBro Dev</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright 2026</span> <strong class="px-1 sitename">TechBro Dev</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
